@@ -13,11 +13,15 @@ header {
   margin: 0;
   height: 100px;
   background: #f2f2f2;
-  padding: 20px;
+  padding: 20px 30px;
+  /* min-width: 640px; how to avoid text wrap?? */
 }
 
 .title {
   display: inline-block;
+  margin-left: 20px;
+  top: 34px;
+  position: absolute;
 }
 
 h1 {
