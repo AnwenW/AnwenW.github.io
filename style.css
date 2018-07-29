@@ -1,10 +1,12 @@
 :root {
   --darkgrey: #3f3f3f;
+  --lightgrey: #f2f2f2;
+  --teal: #0387a8;
 }
 
 body {
   font-family: 'Hind Madurai', sans-serif;
-  background: #0387a8;
+  background: var(--teal);
   color: var(--darkgrey);
   margin: 0;
 }
@@ -12,7 +14,7 @@ body {
 header {
   margin: 0;
   height: 100px;
-  background: #f2f2f2;
+  background: var(--lightgrey);
   padding: 20px 30px;
   /* min-width: 640px; how to avoid text wrap?? */
 }
@@ -29,6 +31,15 @@ h1 {
   margin: 0;
 }
 
+h1 a {
+  color: var(--darkgrey);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--teal);
+}
+
 .subtitle {
   font-weight: 300;
   font-size: 1.2em;
@@ -38,4 +49,20 @@ h1 {
 .github-logo {
   fill: var(--darkgrey);
   display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: orange;
+  }
+  header {
+    height: 130px;
+  }
+  .title {
+    /* width: 50vw; */
+    /* max-width: 500px; */
+  }
+  .subtitle {
+    width: 400px;
+  }
 }
