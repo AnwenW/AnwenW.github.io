@@ -70,7 +70,7 @@ a:hover {
   .github-logo {
     top: 18px;
     position: relative;
-    fill: var(--green);
+    fill: var(--darkgrey);
   }
 }
 
@@ -80,9 +80,6 @@ a:hover {
   }
   .title {
     top: 38px;
-  }
-  .github-logo {
-    fill: var(--darkgrey);
   }
 }
 
