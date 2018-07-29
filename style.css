@@ -16,7 +16,6 @@ header {
   height: 100px;
   background: var(--lightgrey);
   padding: 20px 30px;
-  /* min-width: 640px; how to avoid text wrap?? */
 }
 
 .title {
@@ -24,10 +23,12 @@ header {
   margin-left: 20px;
   top: 34px;
   position: absolute;
+  width: 70vw;
 }
 
 h1 {
   font-weight: 600;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -59,10 +60,39 @@ a:hover {
     height: 130px;
   }
   .title {
-    /* width: 50vw; */
-    /* max-width: 500px; */
+    top: 37px;
+    width: 65vw;
   }
   .subtitle {
-    width: 400px;
+    /* width: 400px; */
+  }
+  .github-logo {
+    top: 18px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  body {
+    background: gold;
+  }
+  header {
+    height: 174px;
+  }
+  .title {
+    top: 3px;
+    position: relative;
+    margin: 0;
+    width: 86vw;
+  }
+  .subtitle {
+    /* width: 300px; */
+  }
+  .github-logo {
+    display: block;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    position: relative;
   }
 }
