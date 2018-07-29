@@ -41,7 +41,7 @@ h1 a {
   text-decoration: none;
 }
 
-a:hover {
+h1 a:hover {
   color: var(--teal);
 }
 
@@ -57,11 +57,52 @@ a:hover {
 }
 
 .projects {
-  background: var(--lightgrey);
-  width: 65vw;
-  height: 200px;
+  /* background: var(--lightgrey); */
+  width: 80vw;
+  max-width: 700px;
+  /* height: 200px; */
   margin: 40px auto;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: var(--lightgrey);
+  padding: 7px 12px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  border-left: 8px solid var(--darkgrey);
+}
+
+li a {
+  color: var(--darkgrey);
+  font-weight: 400;
+}
+
+li:hover {
+  border-left: 8px solid var(--pink);
+}
+
+li:hover a {
+  color: var(--teal);
+}
+
+
+/* ///////   MEDIA QUERIES //////// */
+
+/* MIN WIDTH */
+
+@media only screen and (min-width: 960px) {
+  .projects {
+    margin: 40px auto 40px 150px;
+  }
+}
+
+/* MAX WIDTH */
 
 @media only screen and (max-width: 768px) {
   body {
@@ -115,6 +156,9 @@ a:hover {
     width: 60px;
     height: 60px;
     position: relative;
+  }
+  li:hover {
+    border-left: 8px solid var(--teal);
   }
 }
 
