@@ -60,11 +60,8 @@ a:hover {
     height: 130px;
   }
   .title {
-    top: 37px;
+    top: 51px;
     width: 65vw;
-  }
-  .subtitle {
-    /* width: 400px; */
   }
   .github-logo {
     top: 18px;
@@ -72,12 +69,18 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  body {
+    background: darkorange;
+  }
+  .title {
+    top: 38px;
+  }
+}
+
 @media only screen and (max-width: 568px) {
   body {
     background: gold;
-  }
-  header {
-    height: 174px;
   }
   .title {
     top: 3px;
@@ -85,8 +88,11 @@ a:hover {
     margin: 0;
     width: 86vw;
   }
+  h1 {
+    font-size: 1.5em;
+  }
   .subtitle {
-    /* width: 300px; */
+    font-size: 1em;
   }
   .github-logo {
     display: block;
@@ -94,5 +100,21 @@ a:hover {
     width: 75px;
     height: 75px;
     position: relative;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  body {
+    background: seagreen;
+  }
+  /* h1 {
+    font-size: 1.5em;
+  }
+  .subtitle {
+    font-size: 1em;
+  } */
+  .github-logo {
+    width: 50px;
+    height: 50px;
   }
 }
