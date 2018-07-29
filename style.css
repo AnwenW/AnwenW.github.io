@@ -56,6 +56,13 @@ a:hover {
   display: inline-block;
 }
 
+.projects {
+  background: var(--lightgrey);
+  width: 65vw;
+  height: 200px;
+  margin: 40px auto;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     background: var(--green);
