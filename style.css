@@ -76,6 +76,7 @@ li {
   margin-bottom: 10px;
   font-size: 1.1em;
   border-left: 8px solid var(--darkgrey);
+  transition: transform 0.3s;
 }
 
 li a {
@@ -85,6 +86,7 @@ li a {
 
 li:hover {
   border-left: 8px solid var(--pink);
+  transform: translateX(-20px);
 }
 
 li:hover a {
